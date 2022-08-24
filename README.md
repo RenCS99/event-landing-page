@@ -4,11 +4,11 @@
 Author: Rene Cueva Salas
 
 # Project Title
-Bootstrap Boilerplate
+Event landing page
 
 ### Description
 ---
-This is challenge 6 of week 5 of the Bitwise Web Development Program
+This is challenge 5 of week 6 of the Bitwise Web Development Program
 
 ### Prerequesites
 ---
