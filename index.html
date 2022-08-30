@@ -15,6 +15,22 @@
     <title>Week 6 - challenge 5</title>
   </head>
   <body>
+    <nav class="container-fluid nav navbar navbar-light navbar-expand bg-muted">
+      <a class="navbar-brand mx-3" href="#">moqups</a>
+      </div>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-list me-3">
+          <a class="nav-item text-decoration-none text-dark p-2" href="#">Speakers</a>
+        </li>
+        <li class="nav-list me-3">
+          <a class="nav-item text-decoration-none text-dark p-2" href="#">Tickets</a>
+        </li>
+        <li class="nav-list me-3">
+          <a class="nav-item text-decoration-none text-dark p-2" href="#">Venue</a>
+        </li>
+      </ul>
+    </nav>
+
     <header class="container-fluid bg-light text-center p-5">
       <h1 class="display-4">Clear statement about your event</h1>
       <p class="fs-4">Secondary header providing additional information</p>
@@ -23,32 +39,34 @@
 
 
     <main>
+      <!-- Speaker Section -->
       <section class="container-fluid p-5">
         <div class="text-center mb-5">
           <h2 class="fw-bold">The Speakers</h2>
           <p class="fw-bold">Write a few lines about the event speakers to highlight their expertise in the field.</p>
         </div>
+        <!-- Speaker Columns Section -->
         <div class="d-flex justify-content-evenly align-items-stretch">
-          <div>
-            <div class="bg-dark" style="width:100px; height: 100px;"></div>
+          <div class="speaker-image">
+            <img src="img/beach.jpg" class="img-fluid" alt="Beach" style="width: 100%; height: auto;"> <!-- First method to make image responsive -->
             <h4 class="h3">FName LName</h4>
             <p class="fs-5">Job Description, Location <br> 
             @useranme</p>
           </div>
-          <div>
-            <div class="bg-dark" style="width:100px; height: 100px;"></div>
+          <div  class="speaker-image">
+            <img src="img/beach.jpg" class="img-fluid" alt="Beach"> <!-- Second Image to make image responsive -->
             <h4 class="h3">FName LName</h4>
             <p class="fs-5">Job Description, Location <br> 
             @useranme</p>
           </div>
-          <div>
-            <div class="bg-dark" style="width:100px; height: 100px;"></div>
+          <div  class="speaker-image">
+            <img src="img/beach.jpg" class="img-fluid" alt="Beach">
             <h4 class="h3">FName LName</h4>
             <p class="fs-5">Job Description, Location <br> 
             @useranme</p>
           </div>
-          <div>
-            <div class="bg-dark" style="width:100px; height: 100px;"></div>
+          <div  class="speaker-image">
+            <img src="img/beach.jpg" class="img-fluid" alt="Beach">
             <h4 class="h3">FName LName</h4>
             <p class="fs-5">Job Description, Location <br> 
             @useranme</p>
@@ -56,93 +74,35 @@
         </div>
       </section>
       <hr>
+      <!-- Get You ticket today Section -->
       <section>
         <div class="text-center pt-4 pb-4">
           <h2 class="fw-bold pb-4">Get Your Ticket Today!</h2>
-          <p class="text-muted pb-4">Each ticket includes: <strong>20</strong> speakers, <strong>1000</strong>   participants, <strong>15</strong> sessions, <strong>5</strong> keynotes.</p>
+          <!-- Shows two methods to bold text -->
+          <p class="text-muted pb-4">Each ticket includes: <span class="fw-bold">20</span> speakers, <strong>1000</strong>   participants, <strong>15</strong> sessions, <strong>5</strong> keynotes.</p>
           <button class="btn btn-dark" type="button">BUY TICKET $149</button>
         </div>
       </section>
       <hr>
       <section>
-        <div class="d-flex justify-content-evenly mt-5 mb-5">
+        <div class="d-flex justify-content-evenly mt-5 mb-5 align-items-stretch">
           <div style="width: 45%;">
             <h4 class="h3 fw-bold">The Venue</h4>
-            <p>Our event will be held at the Main office headquarters at Provost & East building 145 City Road, London.</p>
+            <p>Our event will be held at the <strong>Main office headquarters at Provost & East building 145 City Road, London.</strong></p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8352.710646804646!2d-0.12615496400503423!3d51.508157178709304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1661797278353!5m2!1sen!2sus" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="bg-dark" style="width: 45%; height: auto;"></div>
         </div>
       </section>
       <hr>
-      <footer class="d-flex justify-content-between ms-4">
-        <div class="">
-          <i class="fa-brands fa-twitter fa-xl p-2"></i>
-          <i class="fa-brands fa-instagram fa-xl p-2"></i>
-          <i class="fa-brands fa-square-facebook fa-xl p-2"></i>
-        </div>
-        <div class="flex-end ">
-          <p class="text-mute px-md-4">&copy; 2019 Moqups</p>
-        </div>
+      <!-- Footer -->
+      <footer class="container-fluid pb-3 d-flex">
+        <a href="#" class="me-2"><i class="fa-brands fa-twitter fa-xl p-2"></i></a>
+        <a href="#" class="me-2"><i class="fa-brands fa-instagram fa-xl p-2"></i></a>
+        <a href="#" class="me-2"><i class="fa-brands fa-square-facebook fa-xl p-2"></i></a>
+        <a href="@" class="ms-auto">&copy; 2019 moqups</a>
       </footer>
     </main>
-
-
-    <!-- Navbar -->
-    <!-- <nav class="navbar navbar-light bg-muted d-flex">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <i class="fa-brands fa-500px fa-2xl"></i>
-        </a>
-      </div>
-      <div class="d-flex fw-bold justify-content-evenly align-items-end">
-        <a class="text-decoration-none text-black p-2" href="#">Speakers</a>
-        <a class="text-decoration-none text-black p-2" href="#">Tickets</a>
-        <a class="text-decoration-none text-black p-2" href="#">Venue</a>
-      </div>
-    </nav>
-
-    First Section
-    <div class="container-fluid text-center bg-light">
-      <div class="container pt-5 pb-5">
-        <h1 class="">Clear Statement about Your Event</h1>
-        <p>Secondary header providing additional information</p>
-        <button class="btn btn-dark">GET THE TICKET</button>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="container-fluid text-center">
-        <h2>The Speakers</h2>
-        <p>Write a few lines about the event speakers to highlight their expertise in the field</p>
-      </div>
-      <div class="d-flex justify-content-evenly ">
-        <div>
-          <img/>
-          <h3>Ruby Jennings</h3>
-          <p>Product Manager at Moqups. Runner, parent and coffee lover.</p>
-          <p>@username</p>
-        </div>
-        <div>
-          <img/>
-          <h3>Leon Hanson</h3>
-          <p>Sales Manager at Moqups. Runner, parent and coffee lover.</p>
-          <p>@username</p>
-        </div>
-        <div>  
-          <img/>
-          <h3>Meghan Stone</h3>
-          <p>Marketing Specialist at Moqups. Runner, parent and coffee lover.</p>
-          <p>@username</p>
-        </div> 
-        <div>
-          <img/>
-          <h3>Willie Perkins</h3>
-          <p>UX Engineer at Moqups. Runner, parent and coffee lover.</p>
-          <p>@username</p>
-        </div>
-      </div>
-  </div> -->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
